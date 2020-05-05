@@ -1,0 +1,276 @@
+/*== Basic Setup ==*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/*== Heading Section ==*/
+
+h1 {
+    font-size: 4.2rem;
+    color: white;
+}
+
+/*== Reusable Components ==*/
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 8rem 0;
+}
+
+h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8.7rem;
+    margin: auto;
+    background: #14a58c;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.box {
+    padding: 1rem;
+}
+
+.box p {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.btn {
+    background-color: #333;
+    border-bottom: 0.3rem solid #000;
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 6rem;
+    display: inline-block;
+    border-radius: 0.3rem;
+    margin-top: 4.5rem;
+    font-size: 1.6rem;
+}
+
+/*== Header Section ==*/
+
+header {
+    background: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url(img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 85vh;
+    position: relative;
+}
+
+.logo {
+    margin-top: 3.5rem;
+    height: 3.5re;
+    width: auto;
+    float: left;
+}
+
+.btn-hero {
+    background-color: #eb7d4b;
+    border-bottom: 0.3rem solid #c86a40;
+}
+
+/*== Navigation Section ==*/
+
+.main-nav {
+    float: right;
+    margin-top: 4rem;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.main-nav li:hover {
+    background-color: #643a79;
+    border-radius: 0.3rem;
+    transition: .3s;
+}
+
+.active {
+    background-color: #643a79;
+    border-radius: 0.3rem;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*== Services Section ==*/
+
+.service-section {
+    background: linear-gradient(rgba(23, 194, 164, 0.9), rgba(23, 194, 164, 0.9)), url(/resources/css/img/services-bg.jpg);
+    text-align: center;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-section p {
+    color: white;
+}
+
+.service-section h3 {
+    color: white;
+}
+
+.litle-description {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.services-icon {
+    height: 12.5rem;
+    margin-top: 8.2rem;
+    margin-bottom: 6.3rem;
+}
+
+/*== Team Section ==*/
+
+.team-section {
+    background:linear-gradient(rgba(231,241,248,0.9),rgba(231,241,248,0.9)),url(img/team-bg.jpg);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.team-section h2 {
+    color: #3c4761;
+}
+
+.team-section h2::after {
+    background: #c8d9e5;
+}
+
+.team-member {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin-top: 8.2rem;
+    margin-bottom: 4rem;
+}
+
+.team-section h3 {
+    color: #3c4761;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.role {
+    color: #30bae7;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-top: .5rem;
+    display: inline-block;
+    
+}
+
+.team-section .box p {
+    color: #3c4761;
+    margin-top: 2.5rem;
+}
+
+.social-link {
+    margin-top: 4.5rem;
+}
+
+.social-link ul li {
+    margin: 0 .5rem;
+    display: inline-block;
+}
+
+.social-link ul li a{
+    color: white;
+}
+
+.social-link ul li a i::before {
+    background:#bdd1df;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    display: inline-block;
+    transition: .3s;
+}
+
+.social-link ul li a:hover i::before{
+    background: #393939;
+    transform: rotate(360deg);    
+}
+
+/*== Skill Section ==*/
+
+.skill-section h2{
+    text-align: center;
+    color: #3c4761;
+}
+
+.skill-section h2::after{
+    content: "";
+    background: #dfe8ed;
+}
