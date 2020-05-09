@@ -322,6 +322,12 @@ svg.ui-ux circle {
 /*== Portfolio Section ==*/
 .portfolio-section{
     text-align: center;
+    background:linear-gradient(rgba(255,221,153,0.9), rgba(255,221,153,0.9)), url(/resources/css/img/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 .portfolio-section h2{
